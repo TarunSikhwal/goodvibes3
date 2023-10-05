@@ -1,13 +1,78 @@
 <html>
 <head>
 <title>Happiness Be Sunshine</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
+<h1> iTSikhwal </h1>
+    <h1 id="field"></h1>
+    <button onclick="alrt()">Alert</button>
+    <button onclick="prot()">Prompt</button>
+    <button onclick="conf()">Confirm</button>
+    <button onclick="multi()">Multiply</button>
+    <button onclick="dis()">Display</button>
+    <div class="box">
+        Hover me!
+
+    </div>
+    <script>
+        function alrt() {
+            alert("Hiii");
+        }
+        function prot() {
+           // prompt("Enter name:");
+            document.getElementById("field").innerHTML = prompt("Enter name:");
+        }
+        function conf() {
+            if (confirm("Click me!") == true) {
+                x = "OK";
+            }
+            else {
+                x = "Cancel";
+            }
+
+            document.getElementById("field").innerHTML = x;
+        }
+        function add() {
+            var x;
+            // alert("Hiii");
+            //prompt("Enter name:");
+            // document.write("Hello");
+            if (confirm("Click me!") == true) {
+                x = "OK";
+            }
+            else {
+                x = "Cancel";
+            }
+
+            document.getElementById("field").innerHTML = x;
+
+        }
+
 
 <h1>Tarun Sikhwal</h1>
 <h2>abcdefghijklmnopqrstuvywxyz.......
 1234567890</h2>
 <img style = "height:200px; width:200px;" src="TarunSikhwal.jpg"/>
 
+        function dis() {
+            document.write("Hello");
+        }
+
+        function multi() {
+            var x = 5, y = 20;
+            var c = x + y;
+            document.getElementById("field").innerHTML = "Mulitply:" + c;
+        }
+
+
+
+    </script>
+
 </body>
+
+
+
 </html>
